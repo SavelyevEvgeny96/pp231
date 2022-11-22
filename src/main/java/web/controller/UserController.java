@@ -24,13 +24,13 @@ public class UserController {
     public String showAllUsers(Model model) {
         List<User> allUsers = service.getAllUsers();
         model.addAttribute("allUsers",allUsers);
-        return "all-Users";
+        return "allUsers";
     }
 
     @GetMapping(value = "/new")
     public String newUser(Model model) {
         model.addAttribute("user",new User());
-        return "add-User";
+        return "newUsers";
     }
 
     @PostMapping()

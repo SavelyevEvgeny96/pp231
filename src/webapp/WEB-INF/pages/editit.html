@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>Редактирование пользователя</title>
+  <title>Редактировать пользователя</title>
 </head>
 <body>
-<form th:method="PATCH" th:action="@{/{id}(id=${user.getId()})}" th:object="${user}">
+<form th:method="PATCH" th:action="@{/users/{id}(id=${user.getId()})}" th:object="${user}">
+  <label for="name">name</label>
+  <input type="text" th:field="*{name}" id="name"/>
 
-  <label for="name">Имя пользователя: </label>
-  <input type="text" th:field="*{name}" id="name" />
-  <div style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">error</div>
-  </br>
-  <label for="lastname">Фамилия пользователя: </label>
-  <input type="text" th:field="*{surName}" id="lastname" />
-  <div style="color: red" th:if="${#fields.hasErrors('lastName')}" th:errors="*{SurName}">error</div>
-  </br>
-  <label for="licence">Email </label>
-  <input type="text" th:field="*{email}" id="licence" />
-  <div style="color: red" th:if="${#fields.hasErrors('licence')}" th:errors="*{licence}">error</div>
+  <br>
 
-  <input type="submit" value="Изменить" />
+  <label for="surname">surname</label>
+  <input type="text" th:field="*{surname}" id="surname"/>
+
+  <br>
+  <label for="email">Age</label>
+  <input type="text" th:field="*{email}" id="email"/>
+
+  <br>
+  <input type="submit" value="Сохранить"/>
+
 </form>
-
+<a th:href="@{/users}">Удалить</a>
 </body>
-</html>html>
+</html>

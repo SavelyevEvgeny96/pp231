@@ -9,7 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9bd94e2f-ab78-417f-96a2-a10b8b8790fa" name="Changes" comment="промежуточный" />
+    <list default="true" id="9bd94e2f-ab78-417f-96a2-a10b8b8790fa" name="Changes" comment="промежуточный">
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/allUsers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/newUsers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/823bc109-b7b1-4456-b120-c81eeebc6fe4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/823bc109-b7b1-4456-b120-c81eeebc6fe4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/editit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/editit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/index.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,9 +30,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Class" />
-        <option value="HTML File" />
         <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -187,6 +198,11 @@
       <workItem from="1669061746806" duration="5549000" />
       <workItem from="1669095224161" duration="1170000" />
       <workItem from="1669097315096" duration="234000" />
+      <workItem from="1669097553964" duration="353000" />
+      <workItem from="1669097996629" duration="174000" />
+      <workItem from="1669098646694" duration="125000" />
+      <workItem from="1669098835552" duration="2000" />
+      <workItem from="1669149358308" duration="2770000" />
     </task>
     <task id="LOCAL-00001" summary="промежуточный">
       <created>1669097521237</created>
@@ -195,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669097521237</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="промежуточный">
+      <created>1669097706897</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669097706897</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
