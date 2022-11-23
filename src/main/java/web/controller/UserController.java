@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import web.service.UserService;
 import web.service.UserServiceImpl;
 import web.model.User;
 
@@ -13,16 +14,16 @@ import java.util.List;
 @Controller
 @RequestMapping("/users")
 public class UserController {
-    private final UserServiceImpl service;
+    private final UserService userService;
 
     @Autowired
-    public UserController(UserServiceImpl service) {
-        this.service = service;
+    public UserController(UserService service) {
+        this.userService = service;
     }
 
     @GetMapping(value = "/all")
     public String showAllUsers(Model model) {
-        List<User> allUsers = service.getAllUsers();
+        List<User> allUsers = userService.getAllUsers();
         model.addAttribute("allUsers",allUsers);
         return "allUsers";
     }
@@ -35,25 +36,25 @@ public class UserController {
 
     @PostMapping()
     public String createUser( User user) {
-        service.saveUser(user);
+        userService.saveUser(user);
         return "redirect:/users/all";
     }
 
     @GetMapping("/id/edit")
     public String edit(Model model, @RequestParam("id") long id) {
-        model.addAttribute("user",service.getUserById(id));
+        model.addAttribute("user",userService.getUserById(id));
         return "editit";
     }
 
     @PatchMapping("/id")
     public String update( User user,@RequestParam("id") long id) {
-        service.updateUser(user);
+        userService.updateUser(user);
         return "redirect:/users/all";
     }
 
     @DeleteMapping("/id")
     public String delete(@RequestParam("id") long id) {
-        service.deleteUser( id);
+        userService.deleteUser( id);
         return "redirect:/users/all";
     }
 }
