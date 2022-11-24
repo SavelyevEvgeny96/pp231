@@ -5,8 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import web.service.UserService;
-import web.service.UserServiceImpl;
 import web.model.User;
+
 
 import java.util.List;
 
@@ -27,6 +27,7 @@ public class UserController {
         model.addAttribute("allUsers",allUsers);
         return "allUsers";
     }
+
 
     @GetMapping(value = "/new")
     public String newUser(Model model) {
